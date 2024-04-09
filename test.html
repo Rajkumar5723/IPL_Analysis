@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="test.js"></script>
+
+
+    <title>Team Information</title>
+    <style>
+        *{
+            background: transparent;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+        #mainContent {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .textBox {
+            background-color:transparent;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .imgBox {
+            position:absolute;
+            text-align: center;
+            top: 20px;
+            right: 20px;
+        }
+        .sports-image {
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+        }
+        .cta-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color:#000000;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .wrapper {
+            background-color: rgba(139, 143, 144, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .team-mem {
+            text-align: center;
+            margin: 10px;
+        }
+        .team-mem img {
+            max-width: 120px;
+            height: auto;
+            border-radius: 50%;
+        }
+        h2 {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Sports</a>
+        <ul class="nav-links">
+            <li><a href="sample.html" >Home</a></li>
+            <li><a href="https://app.breadcrumb.ai/report/081fcf60-69a1-4fac-bb7d-858aaf06fe66" >Analysis</a></li>
+            <li><a href="test.html" >teams</a></li>
+            <li><a href="index.html" >NEWS</a></li>
+
+            <li><a href="https://www.iplt20.com/points-table/men/2024" >Points Table</a></li>
+            
+        </ul>
+    </header>
+
+<section>
+<div class="container">
+<div id="mainContent">
+    <h1 id="sport">Welcome to IPL Teams Analysis</h1>
+    <p id="text">Explore the exciting world of Indian Premier League (IPL) teams and learn about their history, players, and achievements. From powerhouse teams like Chennai Super Kings (CSK) to the dynamic Mumbai Indians (MI), each franchise brings its unique flair to the world's most popular T20 cricket league.</p>
+    <p id="text">Discover the captivating stories behind the teams' successes, legendary players, and memorable moments that have defined IPL seasons over the years. Whether you're a die-hard fan or a newcomer to cricket, dive into our detailed team profiles and get ready to be entertained!</p>          
+
+    <h2>About IPL</h2>
+    <p>The Indian Premier League (IPL) is a professional Twenty20 cricket league in India contested during April and May of every year by eight teams representing different cities or regions in India.</p>
+    <p>Established in 2008 by the Board of Control for Cricket in India (BCCI), the IPL has become one of the most popular and lucrative sports leagues globally, attracting top cricketing talent from around the world.</p>
+
+    <h2>Get Involved</h2>
+    <p>Follow your favorite IPL teams on social media to stay updated with match schedules, player news, and behind-the-scenes content. Join the conversation using the official IPL hashtags and show your support for your team!</p>
+    <p>Don't miss out on the electrifying cricket action - tune in to watch the IPL live and witness thrilling encounters between the best teams in the sport.</p>
+</div>
+</div>
+</section>
+
+<script>
+ ScrollReveal({ 
+        reset: true,
+        distance:'60px',
+        duration:2500,
+        delay:400
+     });
+     ScrollReveal().reveal('.team', { delay: 500,origin: 'left'});
+     ScrollReveal().reveal('.container,.maincontent', { delay: 500,origin: 'right'});
+
+</script>
+<div class="team">
+<div id="mainContent-1">
+    <button onclick="showTeamInfo('CSK')" class="team-button">
+        <img src="csklogo.png" alt="CSK Logo" class="team-logo">
+    </button>
+    <button onclick="showTeamInfo('KKR')" class="team-button">
+        <img src="kkrlogo.png" alt="CSK Logo" class="team-logo">
+
+    </button>
+    <button onclick="showTeamInfo('MI')" class="team-button">
+        <img src="milogo.png" alt="CSK Logo" class="team-logo">
+
+    </button>
+    <button onclick="showTeamInfo('RCB')" class="team-button">
+        <img src="csblogo.png" alt="CSK Logo" class="team-logo">
+    </button>
+    <button onclick="showTeamInfo('SRH')" class="team-button">
+        <img src="srhlogo.png" alt="CSK Logo" class="team-logo">
+    </button>
+    <button onclick="showTeamInfo('LSG')" class="team-button">
+        <img src="lsg.png" alt="CSK Logo" class="team-logo">
+    </button>
+    <button onclick="showTeamInfo('GT')" class="team-button">
+        <img src="gt.png" alt="CSK Logo" class="team-logo">
+    </button>
+    <button onclick="showTeamInfo('pk')" class="team-button">
+        <img src="pklogo.png" alt="pkLogo" class="team-logo">
+    </button>
+    <button onclick="showTeamInfo('rr')" class="team-button">
+        <img src="rrlogo.png" alt="pkLogo" class="team-logo">
+    </button>
+    <button onclick="showTeamInfo('dd')" class="team-button">
+        <img src="ddlogo.png" alt="pkLogo" class="team-logo">
+    </button>
+    
+</div>
+</div>
+
+
+
+</body>
+</html>

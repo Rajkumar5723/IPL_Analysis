@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Teams</title>
+    <link rel="stylesheet" href="team.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <section>
+        <header>
+            <a href="team.html" class="logo">IPL Teams</a>
+        </header>
+    
+        <div class="content" id="mainContent">
+            <h1>Welcome to IPL Teams Analysis</h1>
+            <p>Explore the exciting world of Indian Premier League (IPL) teams and learn about their history, players, and achievements. From powerhouse teams like Chennai Super Kings (CSK) to the dynamic Mumbai Indians (MI), each franchise brings its unique flair to the world's most popular T20 cricket league.</p>
+            <p>Discover the captivating stories behind the teams' successes, legendary players, and memorable moments that have defined IPL seasons over the years. Whether you're a die-hard fan or a newcomer to cricket, dive into our detailed team profiles and get ready to be entertained!</p>          
+    
+            <h2>About IPL</h2>
+            <p>The Indian Premier League (IPL) is a professional Twenty20 cricket league in India contested during April and May of every year by eight teams representing different cities or regions in India.</p>
+            <p>Established in 2008 by the Board of Control for Cricket in India (BCCI), the IPL has become one of the most popular and lucrative sports leagues globally, attracting top cricketing talent from around the world.</p>
+    
+            <h2>Get Involved</h2>
+            <p>Follow your favorite IPL teams on social media to stay updated with match schedules, player news, and behind-the-scenes content. Join the conversation using the official IPL hashtags and show your support for your team!</p>
+            <p>Don't miss out on the electrifying cricket action - tune in to watch the IPL live and witness thrilling encounters between the best teams in the sport.</p>
+        </div>
+    </section>
+    <section>
+        <h2>Featured Teams</h2>
+
+        <div class="teams">
+
+            <ul class="thumb">
+
+                <li><img src="csk3.png" alt="CSK Logo" onclick="showTeamInfo('CSK')"></li>
+                <li><img src="kkrlogo.png" alt="KKR Logo" onclick="showTeamInfo('KKR')"></li>
+                <li><img src="milogo.png" alt="MI Logo" onclick="showTeamInfo('MI')"></li>
+                <li><img src="rrlogo.png" alt="RR Logo" onclick="showTeamInfo('RR')"></li>
+                <li><img src="ddlogo.png" alt="DD Logo" onclick="showTeamInfo('DD')"></li>
+                <li><img src="kplogo.png" alt="KP Logo" onclick="showTeamInfo('KP')"></li>
+                <li><img src="srhlogo.png" alt="SRH Logo" onclick="showTeamInfo('SRH')"></li>
+                <li><img src="csblogo.png" alt="RCB Logo" onclick="showTeamInfo('RCB')"></li>
+                <li><img src="lsg.png" alt="LSG Logo" onclick="showTeamInfo('LSG')"></li>
+                <li><img src="gt.png" alt="GT Logo" onclick="showTeamInfo('GT')"></li>
+            </ul>
+        </div>
+    </section>
+    
+    <script>
+        const sr = ScrollReveal();
+
+        sr.reveal('.content', {
+            duration: 1000,
+            origin: 'bottom',
+            distance: '50px',
+            delay: 300
+        });
+
+        sr.reveal('.teams', {
+            duration: 1000,
+            origin: 'bottom',
+            distance: '50px',
+            delay: 300
+        });
+
+    </script>
+
+    <script src="team.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ipl.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="ipl.png" alt="IPL Logo">
+            <h1>Royal Challengers Bangalore</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, facilis atque! Dignissimos, inventore exercitationem! Illo, vero blanditiis magnam earum excepturi!</p>
+            <button>WATCH NOW</button>
+        </div>
+
+        <div class="team-info">
+            <div class="team-image">
+                <img id="teamLogo" src="rcb-removebg-preview.png" alt="RCB Logo">
+            </div>
+            <div class="team-list">
+                <ol>
+                    <li onclick="displayTeam('csk', '#f4d03f', 'Chennai Super Kings', 'csklogo.png')">CSK</li>
+                    <li onclick="displayTeam('dc', '#007bff', 'Delhi Capitals', 'dclogo.png')">DC</li>
+                    <li onclick="displayTeam('mi', '#00b894', 'Mumbai Indians', 'milog.png')">MI</li>
+                    <li onclick="displayTeam('srh', '#ff5733', 'Sunrisers Hyderabad', 'srhlogo.png')">SRH</li>
+                    <li onclick="displayTeam('kxip', '#8e44ad', 'Kings XI Punjab', 'kxiplogo.png')">KXIP</li>
+                    <li onclick="displayTeam('rr', '#e74c3c', 'Rajasthan Royals', 'rrlogo.png')">RR</li>
+                    <li onclick="displayTeam('kkr', '#6c5ce7', 'Kolkata Knight Riders', 'kkrlogo.png')">KKR</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function displayTeam(team, color, name, logo) {
+            document.getElementById('teamLogo').src = logo;
+            document.querySelector('.header').style.backgroundColor = color;
+            document.querySelector('button').style.backgroundColor = color;
+            document.querySelector('h1').textContent = name;
+        }
+    </script>
+</body>
+</html>

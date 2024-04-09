@@ -1,0 +1,81 @@
+
+
+header{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    font-size: 30px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style-type: none;
+}
+header ul li a{
+    display: inline-block;
+    color: #000000;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfdcb; /* Set a light background color for better contrast */
+}
+
+#mainContent-1 {
+    margin-top: 20px; /* Add spacing between #mainContent and #mainContent-1 */
+    text-align: center; /* Center-align the content within #mainContent-1 */
+}
+
+.team-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.team-button:hover {
+    background-color: rgba(22, 84, 185, 0.8); /* Darken the background on hover */
+}
+
+.team-logo {
+    max-width: 50px; /* Adjust the maximum width of the team logo */
+    height: auto; /* Maintain the aspect ratio */
+    vertical-align: middle; /* Align the image vertically within the button */
+    margin-right: 10px; /* Add some spacing between the image and text */
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: #000000;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

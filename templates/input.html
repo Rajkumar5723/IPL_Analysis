@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <style>
+        body {
+            background-image: url("/static/img.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 200px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: white;">Enter Team and Opposite Team</h1>
+
+    <form action="/predict_bowler" method="post">
+        <label for="team_name">Team Name:</label>
+        <input type="text" id="team_name" name="team_name"><br><br>
+        <label for="opposite_team_name">Opposite Team Name:</label>
+        <input type="text" id="opposite_team_name" name="opposite_team_name"><br><br>
+        <input type="submit" value="Predict Best Bowler">
+    </form>
+    <form action="/predict_batsman" method="post">
+        <label for="team_name">Team Name:</label>
+        <input type="text" id="team_name" name="team_name"><br><br>
+        <label for="opposite_team_name">Opposite Team Name:</label>
+        <input type="text" id="opposite_team_name" name="opposite_team_name"><br><br>
+        <input type="submit" value="Predict Best Batsman">
+    </form>
+</body>
+</html>

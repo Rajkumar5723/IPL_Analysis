@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>Sports Player Analysis</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <section class="home">
+        <header>
+            <a href="#" class="logo">Sports</a>
+            <ul class="nav-links">
+                <li><a href="#" onclick="showHome()">Home</a></li>
+                <li><a href="https://app.breadcrumb.ai/report/081fcf60-69a1-4fac-bb7d-858aaf06fe66" >Analysis</a></li>
+                <li><a href="test.html" >teams</a></li>
+                <li><a href="news.html" >NEWS</a></li>
+                <li><a href="http://127.0.0.1:5000/" >Prediction</a></li>
+
+
+                <li><a href="https://www.iplt20.com/points-table/men/2024" >Points Table</a></li>
+                
+            </ul>
+        </header>
+        <div class="content" id="mainContent">
+            
+            <div class="textBox">
+                <h2>Player Analysis <br><span>Prediction</span></h2>
+                <p>
+                    Are you ready to take your cricket insights to the next level?
+                    IPL Player Prediction leverages cutting-edge machine learning algorithms to revolutionize how you anticipate player performances in the Indian Premier League (IPL). 
+               Whether you're a seasoned cricket enthusiast or a data-driven sports fan, our platform empowers you to make informed predictions and gain a competitive edge.
+                </p>
+                <a href="#" class="cta-btn" onclick="showProduct()">explore</a>
+            </div>
+            <div class="imgBox">
+                <img src="ipl logo.jpg" alt="Sports Logo" class="sports">
+            </div>
+        </div>
+       
+        
+    </section>
+    
+<script>
+    ScrollReveal({ 
+           reset: true,
+           distance:'60px',
+           duration:2500,
+           delay:400
+        });
+        ScrollReveal().reveal('.textbox', { delay: 500,origin: 'left'});
+        ScrollReveal().reveal('.imgbox', { delay: 500,origin: 'right'});
+   
+   </script>
+
+    <script src="home1.js"></script>
+</body>
+</html>
